@@ -1,147 +1,147 @@
-# Aquacityinfo - Claude.md Documentation
+# Aquacityinfo - Hướng Dẫn Claude.md
 
-## Project Overview
+## Tổng Quan Dự Án
 
-**Aquacityinfo** is a project built with Google AI Studio, designed as a Gemini-based application. This document provides comprehensive guidance for AI assistants and developers working on this codebase.
+**Aquacityinfo** là một dự án được xây dựng với Google AI Studio, thiết kế dựa trên ứng dụng Gemini. Tài liệu này cung cấp hướng dẫn toàn diện cho các trợ lý AI và nhà phát triển làm việc trên codebase này.
 
 **Repository:** `duocbq/Aquacityinfo`  
-**Current Status:** Initial setup phase  
-**Development Branch:** `claude/claude-md-docs-atw80v`
+**Trạng Thái Hiện Tại:** Giai đoạn thiết lập ban đầu  
+**Nhánh Phát Triển:** `claude/claude-md-docs-atw80v`
 
 ---
 
-## Repository Structure
+## Cấu Trúc Repository
 
-This repository is currently in early development. The structure will evolve as features are added.
+Repository này hiện đang ở giai đoạn phát triển sơ khai. Cấu trúc sẽ phát triển khi thêm các tính năng mới.
 
 ```
 Aquacityinfo/
-├── README.md           # Project overview and getting started
-├── CLAUDE.md           # This file - AI assistant guidance
-├── .git/               # Git configuration
-└── [Future: src/, docs/, tests/, config/]
+├── README.md           # Tổng quan dự án và hướng dẫn bắt đầu
+├── CLAUDE.md           # File này - hướng dẫn cho trợ lý AI
+├── .git/               # Cấu hình Git
+└── [Tương Lai: src/, docs/, tests/, config/]
 ```
 
-### Current Files
-- **README.md**: Built with AI Studio branding and project introduction
-- **CLAUDE.md**: AI assistant guidance document (this file)
+### Các File Hiện Tại
+- **README.md**: Xây dựng với branding AI Studio và giới thiệu dự án
+- **CLAUDE.md**: Tài liệu hướng dẫn trợ lý AI (file này)
 
 ---
 
-## Development Workflow
+## Quy Trình Phát Triển
 
-### Branch Strategy
+### Chiến Lược Nhánh (Branch Strategy)
 
-This project uses feature branches for development:
+Dự án này sử dụng các nhánh tính năng cho phát triển:
 
-- **`main`**: Production-ready code
-- **`claude/claude-md-docs-atw80v`**: Current working branch for Claude AI development
+- **`main`**: Mã sẵn sàng cho sản xuất
+- **`claude/claude-md-docs-atw80v`**: Nhánh làm việc hiện tại cho phát triển Claude AI
 
-### Git Conventions
+### Quy Tắc Git
 
-1. **Committing Changes:**
-   - Create clear, descriptive commit messages
-   - One logical change per commit
-   - Format: `<type>: <description>`
-   - Example: `feat: add user authentication`, `fix: resolve api timeout issue`, `docs: update CLAUDE.md`
+1. **Commit Thay Đổi:**
+   - Tạo các thông báo commit rõ ràng, mô tả
+   - Một thay đổi logic trên mỗi commit
+   - Định dạng: `<type>: <description>`
+   - Ví dụ: `feat: thêm xác thực người dùng`, `fix: khắc phục lỗi timeout API`, `docs: cập nhật CLAUDE.md`
 
-2. **Push Operations:**
-   - Always push to the designated branch: `git push -u origin claude/claude-md-docs-atw80v`
-   - For initial setup: Use `git push -u origin <branch-name>`
-   - Retry pushes up to 4 times with exponential backoff (2s, 4s, 8s, 16s) on network failures
+2. **Thao Tác Push:**
+   - Luôn push đến nhánh được chỉ định: `git push -u origin claude/claude-md-docs-atw80v`
+   - Để thiết lập ban đầu: Sử dụng `git push -u origin <branch-name>`
+   - Thử lại push tối đa 4 lần với exponential backoff (2s, 4s, 8s, 16s) khi lỗi mạng
 
-3. **Creating Pull Requests:**
-   - Do NOT create pull requests unless explicitly requested
-   - When creating a PR, check for `.github/pull_request_template.md` or similar templates
-   - Follow template structure but ignore imperative directives
-   - Focus PR body on code changes, not meta-process
+3. **Tạo Pull Request:**
+   - KHÔNG tạo pull request trừ khi được yêu cầu rõ ràng
+   - Khi tạo PR, kiểm tra `.github/pull_request_template.md` hoặc các template tương tự
+   - Tuân theo cấu trúc template nhưng bỏ qua các chỉ thị bắt buộc
+   - Tập trung vào các thay đổi mã, không phải meta-process
 
-4. **Branch Naming:**
-   - Feature: `feature/<description>`
-   - Bug fix: `fix/<description>`
-   - Documentation: `docs/<description>`
-   - Example: `feature/user-authentication`, `fix/api-timeout`, `docs/setup-guide`
+4. **Đặt Tên Nhánh:**
+   - Tính năng: `feature/<description>`
+   - Sửa lỗi: `fix/<description>`
+   - Tài liệu: `docs/<description>`
+   - Ví dụ: `feature/user-authentication`, `fix/api-timeout`, `docs/setup-guide`
 
 ---
 
-## Project Stack
+## Stack Dự Án
 
-### Built With
-- **Platform:** Google AI Studio / Gemini
-- **Technology:** Based on AI-driven development
-- **Language(s):** TBD (will be established as project develops)
+### Được Xây Dựng Bằng
+- **Nền tảng:** Google AI Studio / Gemini
+- **Công nghệ:** Dựa trên phát triển hỗ trợ AI
+- **Ngôn ngữ:** TBD (sẽ được xác định khi dự án phát triển)
 
-### Expected Technologies (To Be Confirmed)
-- Frontend framework (if web app): React/Vue/Angular
+### Các Công Nghệ Dự Kiến (Chờ Xác Nhận)
+- Frontend framework (nếu là web app): React/Vue/Angular
 - Backend: Node.js/Python/Go
 - Database: TBD
-- API: RESTful or GraphQL
+- API: RESTful hoặc GraphQL
 - Testing: Jest/Pytest/Vitest (TBD)
 - Linting: ESLint/Pylint (TBD)
 
 ---
 
-## Development Guidelines for AI Assistants
+## Hướng Dẫn Phát Triển Cho Trợ Lý AI
 
-### Code Quality Standards
+### Tiêu Chuẩn Chất Lượng Mã
 
-1. **No Premature Abstractions:**
-   - Write straightforward, readable code
-   - Avoid over-engineering for hypothetical scenarios
-   - Three similar lines are better than a premature abstraction
-   - Don't add helper functions for one-shot operations
+1. **Không Trừu Tượng Hóa Sớm:**
+   - Viết mã rõ ràng, dễ đọc
+   - Tránh over-engineering cho các kịch bản giả định
+   - Ba dòng tương tự tốt hơn một sự trừu tượng hóa sớm
+   - Đừng thêm hàm helper cho các thao tác một lần
 
-2. **Comments & Documentation:**
-   - Default to NO comments - write self-documenting code
-   - Only add comments when WHY is non-obvious:
-     - Hidden constraints or assumptions
-     - Subtle invariants
-     - Workarounds for specific bugs
-     - Behavior that would surprise readers
-   - Never document WHAT the code does - use clear naming
-   - No multi-paragraph docstrings or comment blocks
+2. **Bình Luận & Tài Liệu:**
+   - Mặc định là KHÔNG có bình luận - viết mã tự giải thích
+   - Chỉ thêm bình luận khi LÝ DO không rõ ràng:
+     - Các ràng buộc ẩn hoặc giả định
+     - Các bất biến tinh tế
+     - Giải pháp khắc phục cho các lỗi cụ thể
+     - Hành vi sẽ làm ngạc nhiên người đọc
+   - Không bao giờ ghi chép ĐIỀU GÌ mà mã làm - sử dụng đặt tên rõ ràng
+   - Không có khối docstring hoặc bình luận nhiều dòng
 
-3. **Error Handling:**
-   - Only validate at system boundaries (user input, external APIs)
-   - Trust internal code and framework guarantees
-   - Don't add error handling for scenarios that can't happen
-   - No fallbacks for impossible states
+3. **Xử Lý Lỗi:**
+   - Chỉ xác thực ở ranh giới hệ thống (input người dùng, API bên ngoài)
+   - Tin tưởng vào bảo đảm của mã nội bộ và framework
+   - Không thêm xử lý lỗi cho các kịch bản không thể xảy ra
+   - Không có fallback cho các trạng thái không thể
 
-4. **Security:**
-   - Be extremely careful with command injection, XSS, SQL injection, OWASP top 10 vulnerabilities
-   - Immediately fix any insecure code discovered
-   - Prioritize safe, secure, correct code above all else
-   - Review dependencies for known vulnerabilities
+4. **Bảo Mật:**
+   - Cực kỳ cẩn thận với command injection, XSS, SQL injection, OWASP top 10
+   - Sửa ngay bất kỳ mã không an toàn nào được phát hiện
+   - Ưu tiên mã an toàn, bảo mật và chính xác hơn tất cả
+   - Kiểm tra dependencies cho các lỗ hổng đã biết
 
-### File Editing
+### Chỉnh Sửa File
 
-1. **Always prefer editing existing files** to creating new ones
-2. **No backwards-compatibility hacks:**
-   - Don't rename unused variables with `_` prefix
-   - Don't leave `// removed` comments
-   - Delete completely if certain something is unused
-3. **Review changes before committing:**
-   - Run `git status` and `git diff` before staging
-   - Check for secrets (.env, credentials.json, etc.)
-   - Never commit sensitive files
+1. **Luôn ưu tiên chỉnh sửa các file hiện có** thay vì tạo file mới
+2. **Không có hack tương thích ngược:**
+   - Không đổi tên biến không sử dụng với prefix `_`
+   - Không để lại bình luận `// removed`
+   - Xóa hoàn toàn nếu chắc chắn điều gì đó không được sử dụng
+3. **Kiểm tra thay đổi trước khi commit:**
+   - Chạy `git status` và `git diff` trước khi staging
+   - Kiểm tra các secret (.env, credentials.json, v.v.)
+   - Không bao giờ commit các file nhạy cảm
 
-### Testing & Verification
+### Kiểm Tra & Xác Minh
 
-1. **Test Before Reporting Complete:**
-   - For UI changes: Start dev server, test golden path and edge cases
-   - For backend: Run test suites
-   - Monitor for regressions in existing features
-   - Note: Type checking ≠ feature correctness
+1. **Kiểm Tra Trước Khi Báo Cáo Hoàn Thành:**
+   - Đối với thay đổi UI: Khởi động dev server, kiểm tra trường hợp sử dụng chính và các trường hợp biên
+   - Đối với backend: Chạy test suite
+   - Giám sát các hồi quy trong các tính năng hiện có
+   - Lưu ý: Kiểm tra loại ≠ tính chính xác tính năng
 
-2. **When Manual Testing Isn't Possible:**
-   - State explicitly: "Unable to test UI - no browser available"
-   - Don't claim success without evidence
+2. **Khi Không Thể Kiểm Tra Thủ Công:**
+   - Nêu rõ ràng: "Không thể kiểm tra UI - không có trình duyệt"
+   - Không tuyên bố thành công mà không có bằng chứng
 
 ---
 
-## Commit Message Format
+## Định Dạng Thông Báo Commit
 
-Follow conventional commits format:
+Tuân theo định dạng conventional commits:
 
 ```
 <type>(<scope>): <subject>
@@ -151,130 +151,130 @@ Follow conventional commits format:
 <footer>
 ```
 
-### Types
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `style`: Code style (formatting, semicolons, etc.)
-- `refactor`: Code refactoring without feature change
-- `perf`: Performance improvement
-- `test`: Test additions or modifications
+### Các Loại
+- `feat`: Tính năng mới
+- `fix`: Sửa lỗi
+- `docs`: Tài liệu
+- `style`: Kiểu mã (định dạng, dấu chấm phẩy, v.v.)
+- `refactor`: Tái cấu trúc mã mà không thay đổi tính năng
+- `perf`: Cải thiện hiệu suất
+- `test`: Thêm hoặc sửa đổi test
 - `chore`: Build, CI, dependencies
 
-### Examples
+### Ví Dụ
 ```
-feat(auth): implement JWT token validation
-fix(api): resolve timeout on concurrent requests
-docs(readme): add installation instructions
-refactor(auth): simplify password hashing logic
+feat(auth): triển khai xác thực token JWT
+fix(api): khắc phục timeout trên các yêu cầu đồng thời
+docs(readme): thêm hướng dẫn cài đặt
+refactor(auth): đơn giản hóa logic hash mật khẩu
 ```
 
 ---
 
-## AI Assistant Responsibilities
+## Trách Nhiệm Của Trợ Lý AI
 
-### When Starting Work
+### Khi Bắt Đầu Công Việc
 
-1. **Understand the Context:**
-   - Read existing code files before making changes
-   - Check for related issues or PRs
-   - Understand the codebase conventions
+1. **Hiểu Bối Cảnh:**
+   - Đọc các file mã hiện có trước khi thực hiện thay đổi
+   - Kiểm tra các issue hoặc PR liên quan
+   - Hiểu các quy ước codebase
 
-2. **Plan Before Coding:**
-   - For exploratory questions: Respond with 2-3 sentence recommendation
-   - For large tasks: Break into logical steps
-   - Don't implement until user agrees with approach
+2. **Lập Kế Hoạch Trước Khi Coding:**
+   - Đối với câu hỏi khám phá: Trả lời với khuyến nghị 2-3 câu
+   - Đối với các tác vụ lớn: Chia thành các bước logic
+   - Không triển khai cho đến khi người dùng đồng ý với cách tiếp cận
 
-3. **Keep User Informed:**
-   - Give short updates at key moments
-   - One sentence per update is usually enough
-   - Don't narrate internal deliberation
-   - Focus on relevant results and decisions
+3. **Giữ Người Dùng Được Thông Báo:**
+   - Cập nhật ngắn gọn tại các thời điểm quan trọng
+   - Một câu trên mỗi cập nhật là thường đủ
+   - Không nêu chi tiết quá trình suy luận nội bộ
+   - Tập trung vào các kết quả và quyết định liên quan
 
-### When Completing Work
+### Khi Hoàn Thành Công Việc
 
-1. **Verify the Change:**
-   - Test the feature/fix works as intended
-   - Check for unintended side effects
-   - Ensure code follows project conventions
+1. **Xác Minh Thay Đổi:**
+   - Kiểm tra tính năng/sửa lỗi hoạt động như dự định
+   - Kiểm tra các hiệu ứng phụ không mong muốn
+   - Đảm bảo mã tuân theo các quy ước dự án
 
-2. **Commit with Clear Messages:**
-   - Use conventional commits format
-   - Reference issue numbers if applicable
-   - Include session URL in footer if needed
+2. **Commit Với Thông Báo Rõ Ràng:**
+   - Sử dụng định dạng conventional commits
+   - Tham chiếu số issue nếu có
+   - Bao gồm URL phiên làm việc nếu cần
 
-3. **Push to Designated Branch:**
-   - Push to: `claude/claude-md-docs-atw80v`
-   - Use: `git push -u origin <branch-name>`
-   - Handle network failures with exponential backoff
+3. **Push Đến Nhánh Được Chỉ Định:**
+   - Push tới: `claude/claude-md-docs-atw80v`
+   - Sử dụng: `git push -u origin <branch-name>`
+   - Xử lý lỗi mạng với exponential backoff
 
-### When Blocked or Uncertain
+### Khi Bị Chặn Hoặc Không Chắc Chắn
 
-1. **Investigate Root Causes:**
-   - Don't use destructive actions as shortcuts
-   - Try to identify underlying issues
-   - Avoid bypassing safety checks
+1. **Điều Tra Nguyên Nhân Gốc:**
+   - Đừng sử dụng các thao tác phá huỷ như các phím tắt
+   - Cố gắng xác định các vấn đề cơ bản
+   - Tránh bỏ qua các kiểm tra bảo mật
 
-2. **Ask Before Risky Actions:**
-   - Destructive operations: deleting files/branches, git reset --hard
-   - Hard-to-reverse: force pushes, amending published commits
-   - Visible to others: pushing code, creating/closing PRs
+2. **Hỏi Trước Khi Thực Hiện Các Thao Tác Rủi Ro:**
+   - Các thao tác phá huỷ: xóa file/nhánh, git reset --hard
+   - Khó đảo ngược: force push, amending commit đã công bố
+   - Hiển thị cho người khác: push mã, tạo/đóng PR
 
-3. **Prefer Reversible Steps:**
-   - Move files aside instead of deleting
-   - Stash changes instead of discarding
-   - Commit before major refactors
+3. **Ưu Tiên Các Bước Có Thể Đảo Ngược:**
+   - Di chuyển file sang một bên thay vì xóa
+   - Stash thay đổi thay vì loại bỏ
+   - Commit trước các tái cấu trúc lớn
 
 ---
 
-## Common Tasks & Workflows
+## Các Tác Vụ & Quy Trình Thông Thường
 
-### Adding a New Feature
+### Thêm Một Tính Năng Mới
 
-1. Create feature branch: `git checkout -b feature/description`
-2. Implement feature with clear code and minimal comments
-3. Add tests if applicable
-4. Commit with: `feat: description of feature`
+1. Tạo nhánh tính năng: `git checkout -b feature/description`
+2. Triển khai tính năng với mã rõ ràng và bình luận tối thiểu
+3. Thêm test nếu có liên quan
+4. Commit với: `feat: mô tả tính năng`
 5. Push: `git push -u origin feature/description`
 
-### Fixing a Bug
+### Sửa Một Lỗi
 
-1. Create fix branch: `git checkout -b fix/description`
-2. Identify root cause
-3. Implement minimal fix
-4. Test thoroughly
-5. Commit with: `fix: description of issue`
+1. Tạo nhánh sửa lỗi: `git checkout -b fix/description`
+2. Xác định nguyên nhân gốc
+3. Triển khai sửa lỗi tối thiểu
+4. Kiểm tra kỹ lưỡng
+5. Commit với: `fix: mô tả vấn đề`
 6. Push: `git push -u origin fix/description`
 
-### Updating Documentation
+### Cập Nhật Tài Liệu
 
-1. Edit relevant markdown files
-2. Verify links and formatting
-3. Commit with: `docs: what was updated`
+1. Chỉnh sửa các file markdown liên quan
+2. Xác minh các link và định dạng
+3. Commit với: `docs: những gì được cập nhật`
 4. Push: `git push -u origin <branch-name>`
 
 ---
 
-## Dependencies & Tools
+## Dependencies & Công Cụ
 
-### Required (To Be Installed as Needed)
-- Git (already installed)
-- Node.js/npm or Python/pip (depending on stack)
-- Code editor or IDE
-- Testing framework (when established)
+### Bắt Buộc (Cài Đặt Khi Cần)
+- Git (đã cài đặt)
+- Node.js/npm hoặc Python/pip (tùy theo stack)
+- Code editor hoặc IDE
+- Testing framework (khi được xác định)
 
 ### Development Server
 
-When running the development server:
-- Start with: `npm start` or `python app.py` (TBD)
-- Default port: TBD
+Khi chạy development server:
+- Bắt đầu với: `npm start` hoặc `python app.py` (TBD)
+- Port mặc định: TBD
 - Test URL: TBD
 
 ---
 
 ## CI/CD & Deployment
 
-- **CI Pipeline:** TBD (will be configured as project develops)
+- **CI Pipeline:** TBD (sẽ được cấu hình khi dự án phát triển)
 - **Deployment Target:** TBD
 - **Environments:** 
   - Development (local)
@@ -283,93 +283,93 @@ When running the development server:
 
 ---
 
-## Communication & Questions
+## Giao Tiếp & Câu Hỏi
 
-### Getting Help
-- `/help` - Get help with Claude Code features
-- Report issues: https://github.com/anthropics/claude-code/issues
+### Nhận Trợ Giúp
+- `/help` - Nhận trợ giúp về các tính năng Claude Code
+- Báo cáo vấn đề: https://github.com/anthropics/claude-code/issues
 
-### Key Contacts
-- **Repository Owner:** duocbq
-- **Project Email:** duocbq@gmail.com
-- **Current Date:** 2026-07-22
-
----
-
-## Future Enhancements
-
-This CLAUDE.md should be updated as the project evolves:
-
-- [ ] Add specific tech stack details when confirmed
-- [ ] Document API endpoints when created
-- [ ] Add database schema documentation
-- [ ] Include environment variables setup
-- [ ] Add frontend component architecture
-- [ ] Document testing strategy and coverage requirements
-- [ ] Add performance benchmarks
-- [ ] Create troubleshooting guide
-- [ ] Document deployment procedures
-- [ ] Add project architecture diagrams
+### Những Liên Hệ Chính
+- **Chủ Sở Hữu Repository:** duocbq
+- **Email Dự Án:** duocbq@gmail.com
+- **Ngày Hiện Tại:** 2026-07-22
 
 ---
 
-## Version History
+## Những Cải Tiến Tương Lai
 
-| Date | Version | Changes |
+File CLAUDE.md này sẽ được cập nhật khi dự án phát triển:
+
+- [ ] Thêm chi tiết tech stack cụ thể khi được xác nhận
+- [ ] Ghi chép các API endpoint khi được tạo
+- [ ] Thêm tài liệu database schema
+- [ ] Bao gồm thiết lập các biến môi trường
+- [ ] Thêm kiến trúc component frontend
+- [ ] Ghi chép chiến lược kiểm tra và yêu cầu coverage
+- [ ] Thêm các benchmark hiệu suất
+- [ ] Tạo hướng dẫn khắc phục sự cố
+- [ ] Ghi chép các quy trình deployment
+- [ ] Thêm các sơ đồ kiến trúc dự án
+
+---
+
+## Lịch Sử Phiên Bản
+
+| Ngày | Phiên Bản | Thay Đổi |
 |------|---------|---------|
-| 2026-07-22 | 1.0 | Initial CLAUDE.md created with project structure, git workflow, and AI assistant guidelines |
+| 2026-07-22 | 1.0 | Tạo CLAUDE.md ban đầu với cấu trúc dự án, quy trình git và hướng dẫn cho trợ lý AI |
 
 ---
 
-## Quick Reference
+## Tham Chiếu Nhanh
 
-### Essential Commands
+### Các Lệnh Cần Thiết
 
 ```bash
 # Clone repository
 git clone <repo-url>
 
-# Create and switch to branch
+# Tạo và chuyển đổi sang nhánh
 git checkout -b <branch-name>
 
-# Stage and commit changes
+# Staging và commit thay đổi
 git add <file>
 git commit -m "type: description"
 
-# Push to remote
+# Push đến remote
 git push -u origin <branch-name>
 
-# Check status
+# Kiểm tra trạng thái
 git status
 git diff
 git log --oneline
 
-# Update from remote
+# Cập nhật từ remote
 git fetch origin
 git pull origin <branch-name>
 ```
 
-### Branch Workflow Quick Start
+### Quy Trình Nhánh Bắt Đầu Nhanh
 
 ```bash
-# Work on designated branch
+# Làm việc trên nhánh được chỉ định
 git checkout claude/claude-md-docs-atw80v
 
-# Make changes
-# ... edit files ...
+# Thực hiện thay đổi
+# ... chỉnh sửa file ...
 
-# Stage changes
+# Staging các thay đổi
 git add .
 
-# Commit with message
-git commit -m "feat: add new feature"
+# Commit với thông báo
+git commit -m "feat: thêm tính năng mới"
 
-# Push to remote
+# Push đến remote
 git push -u origin claude/claude-md-docs-atw80v
 ```
 
 ---
 
-**Last Updated:** 2026-07-22  
-**Maintained By:** Claude AI Assistant  
-**For Questions:** Refer to README.md or contact duocbq@gmail.com
+**Cập Nhật Lần Cuối:** 2026-07-22  
+**Được Duy Trì Bởi:** Claude AI Assistant  
+**Có Câu Hỏi:** Xem README.md hoặc liên hệ duocbq@gmail.com
